@@ -13,6 +13,9 @@ class Exo2Test {
     void AnagramTestNullStrings() {
         Assertions.assertThrows(NullPointerException.class, () -> Exercice2.isAnagram (null,null));
     }
-
+    @Test
+    void isAnagramShouldReturnFalseIfTheSizeOfTheTwoStringsAreDifferent() {
+        Assertions.assertFalse(Exercice2.isAnagram("abs","jjjjjj"));
+    }
 
 }
