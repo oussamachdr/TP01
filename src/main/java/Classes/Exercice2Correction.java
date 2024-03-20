@@ -1,6 +1,6 @@
 package Classes;
 
-public class Exercice2 {
+public class Exercice2Correction {
     public static boolean isAnagram(String s1, String s2) {
         if (s1 == null || s2 == null) {
             throw new NullPointerException("Strings must not be null");
