@@ -17,4 +17,20 @@ class Exo1Test {
     void PalindromeTestwithNoPalindromeString(){
         Assertions.assertFalse(Exercice1Correction.isPalindrome("rada"));
     }
+    @Test
+    void PalindromeTestWithPalindromStringsIncludSpaces() {
+        Assertions.assertTrue(Exercice1Correction.isPalindrome("ra da r"));
+    }
+    @Test
+    void PalindromeTestwithNoPalindromeStringIncludeSpaces(){
+        Assertions.assertFalse(Exercice1Correction.isPalindrome("ra d a"));
+    }
+    @Test
+    void PalindromeTestWithPalindromStringsLowerandUpperCase() {
+        Assertions.assertTrue(Exercice1Correction.isPalindrome("rA daR"));
+    }
+    @Test
+    void PalindromeTestWithNoPalindromStringsLowerandUpperCase() {
+        Assertions.assertFalse(Exercice1Correction.isPalindrome("rA da"));
+    }
 }
