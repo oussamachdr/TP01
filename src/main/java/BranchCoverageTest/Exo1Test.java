@@ -5,15 +5,19 @@ import org.junit.jupiter.api.Test;
 
 class Exo1Test {
     @Test
-    void PalindromeTestNullStrings() {
+    void isPalindromeTestNullStrings() {
         Assertions.assertThrows(NullPointerException.class, () ->Exercice1Correction.isPalindrome (null));
     }
     @Test
-    void PalindromeTestwithPalindromeString(){
+    void isPalindromeTestWithNoNullStringsAndIisLessThanJAndCharIDiffrentWithCharJ() {
+        Assertions.assertFalse(Exercice1Correction.isPalindrome("radfr"));
+    }
+    @Test
+    void isPalindromeTestWithNoNullStringsAndIisLessThanJAndCharIEqualtWithCharJ() {
         Assertions.assertTrue(Exercice1Correction.isPalindrome("radar"));
     }
     @Test
-    void PalindromeTestwithNoPalindromeString(){
-        Assertions.assertFalse(Exercice1Correction.isPalindrome("rada"));
+    void isPalindromeTestWithNoNullStringsAndIisEqualToJ() {
+        Assertions.assertTrue(Exercice1Correction.isPalindrome("r"));
     }
 }
