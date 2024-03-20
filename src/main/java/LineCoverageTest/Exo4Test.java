@@ -11,7 +11,7 @@ public class Exo4Test {
     }
     @Test
     public void solveShouldReturnNullIfEquationDoesntHaveSolution(){
-        Assertions.assertEquals(null,Exercice4.solve(2,0,2));
+        Assertions.assertNull(Exercice4.solve(2, 0, 2));
     }
     @Test
     public void solveShouldReturnSolutionIfDeltaIsEqualZero(){
