@@ -14,7 +14,7 @@ public class Exo2Test {
         Assertions.assertTrue(Exercice2.isAnagram("chien","niech"));
     }
     @Test
-    public void isAnagramShouldReturnTrueifStringsAreNotNullAndAllTableCaseIsNotSetToZero(){
+    public void isAnagramShouldReturnTrueifStringsAreNotNullAndExsistTableCaseIsNotSetToZero(){
         Assertions.assertFalse(Exercice2.isAnagram("chienz","niecha"));
     }
 }
